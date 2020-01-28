@@ -1,0 +1,10 @@
+^C:\USERS\ABHISHEK\DOCUMENTS\COLLEGE_Y4_S1\COMPUTER_GRAPHICS\ABHI_COMPUTERGRAPHICS\LAB3_STARFIELD\BUILD\CMAKEFILES\AFF63EC7E88319B68A7BAFC1D2E1389C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Lab3_Starfield -BC:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Lab3_Starfield/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Lab3_Starfield/build/Lab2.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

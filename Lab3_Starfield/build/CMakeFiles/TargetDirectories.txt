@@ -1,0 +1,3 @@
+C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Lab3_Starfield/build/CMakeFiles/Lab2.dir
+C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Lab3_Starfield/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Lab3_Starfield/build/CMakeFiles/ZERO_CHECK.dir

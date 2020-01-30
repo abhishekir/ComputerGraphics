@@ -1,0 +1,3 @@
+C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Lab4_MatrixTransformations/out/build/x64-Debug/CMakeFiles/Lab.dir
+C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Lab4_MatrixTransformations/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Lab4_MatrixTransformations/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

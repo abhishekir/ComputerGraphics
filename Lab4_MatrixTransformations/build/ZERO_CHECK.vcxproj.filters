@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Abhishek\Documents\College_Y4_S1\computer_graphics\Abhi_ComputerGraphics\Lab4_MatrixTransformations\build\CMakeFiles\b4f308d4a81106af7b96c864d8d5ad37\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8D08E7C3-C56F-3252-B3EE-5E24AB3DB5B9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

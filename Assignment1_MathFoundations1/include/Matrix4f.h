@@ -42,6 +42,10 @@ public:
     // Makes the matrix an identity matrix
     void identity(){
         // TODO:
+        n[0][0] = 1; n[0][1] = 0; n[0][2] = 0; n[0][3] = 0;
+        n[1][0] = 0; n[1][1] = 1; n[1][2] = 0; n[1][3] = 0;
+        n[2][0] = 0; n[2][1] = 0; n[2][2] = 1; n[2][3] = 0;
+        n[3][0] = 0; n[3][1] = 0; n[3][2] = 0; n[3][3] = 1;
     }
 
     // Index operator with two dimensions
@@ -69,16 +73,67 @@ public:
     // Make a matrix rotate about various axis
     Matrix4f MakeRotationX(float t){
         // TODO:
+        //float xRotation[4][4];
+        // xRotation matrix:
+        // xRotation[0][0] = 1; xRotation[0][1] = 0; xRotation[0][2] = 0; xRotation[0][3] = 0;
+        // xRotation[1][0] = 0; xRotation[1][1] = cos(t); xRotation[1][2] = -sin(t); xRotation[1][3] = 0;
+        // xRotation[2][0] = 0; xRotation[2][1] = sin(t); xRotation[2][2] = cos(t); xRotation[2][3] = 0;
+        // xRotation[3][0] = 0; xRotation[3][1] = 0; xRotation[3][2] = 0; xRotation[3][3] = 1;
+        // Matrix4f xRotation = Matrix4f(1, 0, 0, 0, 0, cos(t), -sin(t), 0, 0, sin(t), cos(t), 0, 0, 0, 0, 1);
+
+        Matrix4f xRotation = Matrix4f();
+        xRotation.identity();
+        xRotation[1][1] = cos(t);
+        xRotation[1][2] = -sin(t);
+        xRotation[2][1] = sin(t);
+        xRotation[2][2] = cos(t);
+
+        Vector4f Col0 = Vector4f(xRotation[0][0], xRotation[0][1], xRotation[0][2], xRotation[0][3]);
+        Vector4f Col1 = Vector4f(xRotation[1][0], xRotation[1][1], xRotation[1][2], xRotation[1][3]);
+        Vector4f Col2 = Vector4f(xRotation[2][0], xRotation[2][1], xRotation[2][2], xRotation[2][3]);
+        Vector4f Col3 = Vector4f(xRotation[3][0], xRotation[3][1], xRotation[3][2], xRotation[3][3]);
+
+        this->n[0][0] = Dot(Col1, xRotation.operator[](0));
+        this->n[0][1] = Dot(Col1, xRotation.operator[](0));
+        this->n[0][2] = Dot(Col1, xRotation.operator[](0));
+        this->n[0][3] = Dot(Col1, xRotation.operator[](0));
+
+
+        this->n[0][0] = n[0][0] * xRotation[0][0] + n[0][0] + 
+          xRotation[0][1] * n[1][0] +
+          xRotation[0][2] * n[2][0] +
+          xRotation[0][3] * n[3][0];
+        
+        Vector4f first = xRotation.operator[](0);
+        Vector4f second = xRotation.operator(0)[];
+
+
         return(Matrix4f()); // You will need to modify this.
                             // When you test, test against glm_gtx_transform
     }
     Matrix4f MakeRotationY(float t){
         // TODO:
+        Matrix4f yRotation = Matrix4f();
+        yRotation.identity();
+        yRotation[0][0] = cos(t);
+        yRotation[0][2] = -sin(t);
+        yRotation[2][0] = sin(t);
+        yRotation[2][2] = cos(t);
+
+
+
         return(Matrix4f()); // You will need to modify this.
                             // When you test, test against glm_gtx_transform
     }
     Matrix4f MakeRotationZ(float t){
         // TODO:
+        Matrix4f zRotation = Matrix4f();
+        zRotation.identity();
+        zRotation[0][0] = cos(t);
+        zRotation[0][1] = -sin(t);
+        zRotation[1][0] = sin(t);
+        zRotation[1][1] = cos(t);
+
         return(Matrix4f()); // You will need to modify this.
                             // When you test, test against glm_gtx_transform
     }

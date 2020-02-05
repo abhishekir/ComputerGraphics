@@ -10,11 +10,11 @@
 
 ## Modify this section
 
-- How many hours did it take you to complete this lab?
+- How many hours did it take you to complete this lab? 30 mins.
 - Did you collaborate with any other students/TAs/Professors?
+Yes, I recieved help from a kind soul sitting in the row behind me. Turns out my issue was a typo in a function name.
 - Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd
+  - http://specgl.com/2017/08/05/methods-to-drawing-multiple-triangles/
 - (Optional) What was your favorite part of the lab?
 - (Optional) How would you improve the lab?
 

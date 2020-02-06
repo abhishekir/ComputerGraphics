@@ -6,8 +6,8 @@
 
 *TODO*: Please edit the following information in your assignment
 
-* Name and partners name (At most 1 partner for this assignment): 
-* How many hours did it take you to complete this assignment? 4 hrs
+* Name and partners name (At most 1 partner for this assignment): Justin Zhang
+* How many hours did it take you to complete this assignment? 8 hrs
 * Did you collaborate or share ideas with any other students/TAs/Professors? 
 I worked together with my class partner Justin Zhang.
 * Did you use any external resources? 

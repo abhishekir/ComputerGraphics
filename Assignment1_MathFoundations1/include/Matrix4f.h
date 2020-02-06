@@ -4,6 +4,9 @@
 #define MATRIX4F_H
 
 #include <cmath>
+#include <math.h>
+#define PI 3.14159265359
+#include <iostream>
 
 // We need to Vector4f header in order to multiply a matrix
 // by a vector.
@@ -41,7 +44,6 @@ public:
 
     // Makes the matrix an identity matrix
     void identity(){
-        // TODO:
         n[0][0] = 1; n[0][1] = 0; n[0][2] = 0; n[0][3] = 0;
         n[1][0] = 0; n[1][1] = 1; n[1][2] = 0; n[1][3] = 0;
         n[2][0] = 0; n[2][1] = 0; n[2][2] = 1; n[2][3] = 0;
@@ -60,87 +62,63 @@ public:
       return (n[j][i]);
     }
 
-    // Return a single  vector from the matrix (row or columnn major? hmm).
+    // Return a single vector from the matrix (row or columnn major? hmm).
     Vector4f& operator [](int j){
       return (*reinterpret_cast<Vector4f *>(n[j]));
     }
 
-    // Return a single  vector from the matrix (row or columnn major? hmm).
+    // Return a single vector from the matrix (row or columnn major? hmm).
     const Vector4f& operator [](int j) const{
       return (*reinterpret_cast<const Vector4f *>(n[j]));
     }
 
     // Make a matrix rotate about various axis
-    Matrix4f MakeRotationX(float t){
+    void MakeRotationX(float t){
         // TODO:
-        //float xRotation[4][4];
-        // xRotation matrix:
-        // xRotation[0][0] = 1; xRotation[0][1] = 0; xRotation[0][2] = 0; xRotation[0][3] = 0;
-        // xRotation[1][0] = 0; xRotation[1][1] = cos(t); xRotation[1][2] = -sin(t); xRotation[1][3] = 0;
-        // xRotation[2][0] = 0; xRotation[2][1] = sin(t); xRotation[2][2] = cos(t); xRotation[2][3] = 0;
-        // xRotation[3][0] = 0; xRotation[3][1] = 0; xRotation[3][2] = 0; xRotation[3][3] = 1;
-        // Matrix4f xRotation = Matrix4f(1, 0, 0, 0, 0, cos(t), -sin(t), 0, 0, sin(t), cos(t), 0, 0, 0, 0, 1);
+        this->identity();
+        this->n[1][1] = cos(t);
+        this->n[2][2] = cos(t);
+        this->n[2][1] = -sin(t);
+        this->n[1][2] = sin(t);
 
-        Matrix4f xRotation = Matrix4f();
-        xRotation.identity();
-        xRotation[1][1] = cos(t);
-        xRotation[1][2] = -sin(t);
-        xRotation[2][1] = sin(t);
-        xRotation[2][2] = cos(t);
-
-        Vector4f Col0 = Vector4f(xRotation[0][0], xRotation[0][1], xRotation[0][2], xRotation[0][3]);
-        Vector4f Col1 = Vector4f(xRotation[1][0], xRotation[1][1], xRotation[1][2], xRotation[1][3]);
-        Vector4f Col2 = Vector4f(xRotation[2][0], xRotation[2][1], xRotation[2][2], xRotation[2][3]);
-        Vector4f Col3 = Vector4f(xRotation[3][0], xRotation[3][1], xRotation[3][2], xRotation[3][3]);
-
-        this->n[0][0] = Dot(Col1, xRotation.operator[](0));
-        this->n[0][1] = Dot(Col1, xRotation.operator[](0));
-        this->n[0][2] = Dot(Col1, xRotation.operator[](0));
-        this->n[0][3] = Dot(Col1, xRotation.operator[](0));
-
-
-        this->n[0][0] = n[0][0] * xRotation[0][0] + n[0][0] + 
-          xRotation[0][1] * n[1][0] +
-          xRotation[0][2] * n[2][0] +
-          xRotation[0][3] * n[3][0];
-        
-        Vector4f first = xRotation.operator[](0);
-        Vector4f second = xRotation.operator(0)[];
-
-
-        return(Matrix4f()); // You will need to modify this.
-                            // When you test, test against glm_gtx_transform
+        // You will need to modify this.
+        // When you test, test against glm_gtx_transform
     }
-    Matrix4f MakeRotationY(float t){
+
+    void MakeRotationY(float t){
         // TODO:
-        Matrix4f yRotation = Matrix4f();
-        yRotation.identity();
-        yRotation[0][0] = cos(t);
-        yRotation[0][2] = -sin(t);
-        yRotation[2][0] = sin(t);
-        yRotation[2][2] = cos(t);
+        this->identity();
+        this->n[0][0] = cos(t);
+        this->n[2][2] = cos(t);
+        this->n[0][2] = -sin(t);
+        this->n[2][0] = sin(t);
 
-
-
-        return(Matrix4f()); // You will need to modify this.
-                            // When you test, test against glm_gtx_transform
+        // You will need to modify this.
+        // When you test, test against glm_gtx_transform
     }
-    Matrix4f MakeRotationZ(float t){
+    void MakeRotationZ(float t){
         // TODO:
-        Matrix4f zRotation = Matrix4f();
-        zRotation.identity();
-        zRotation[0][0] = cos(t);
-        zRotation[0][1] = -sin(t);
-        zRotation[1][0] = sin(t);
-        zRotation[1][1] = cos(t);
 
-        return(Matrix4f()); // You will need to modify this.
-                            // When you test, test against glm_gtx_transform
+        this->identity();
+        this->n[0][0] = cos(t);
+        this->n[1][1] = cos(t);
+        this->n[0][1] = sin(t);
+        this->n[1][0] = -sin(t);
+
+        // You will need to modify this.
+        // When you test, test against glm_gtx_transform
     }
-    Matrix4f MakeScale(float sx,float sy, float sz){
+    void MakeScale(float sx,float sy, float sz){
         // TODO:
-        return(Matrix4f()); // You will need to modify this.
-                            // When you test, test against glm_gtx_transform
+
+        this->identity();
+        this->n[0][0] = sx;
+        this->n[1][1] = sy;
+        this->n[2][2] = sz;
+        this->n[3][3] = 1;
+
+        // You will need to modify this.
+        // When you test, test against glm_gtx_transform
     }
 
 
@@ -151,6 +129,26 @@ Matrix4f operator *(const Matrix4f& A, const Matrix4f& B){
   // TODO:
   Matrix4f mat4;
 
+  mat4[0][0] = A[0][0] * B[0][0] + A[0][1] * B[1][0] + A[0][2] * B[2][0] + A[0][3] * B[3][0];
+  mat4[0][1] = A[0][0] * B[0][1] + A[0][1] * B[1][1] + A[0][2] * B[2][1] + A[0][3] * B[3][1];
+  mat4[0][2] = A[0][0] * B[0][2] + A[0][1] * B[1][2] + A[0][2] * B[2][2] + A[0][3] * B[3][2];
+  mat4[0][3] = A[0][0] * B[0][3] + A[0][1] * B[1][3] + A[0][2] * B[2][3] + A[0][3] * B[3][3];
+  
+  mat4[1][0] = A[1][0] * B[0][0] + A[1][1] * B[1][0] + A[1][2] * B[2][0] + A[1][3] * B[3][0];
+  mat4[1][1] = A[1][0] * B[0][1] + A[1][1] * B[1][1] + A[1][2] * B[2][1] + A[1][3] * B[3][1];
+  mat4[1][2] = A[1][0] * B[0][2] + A[1][1] * B[1][2] + A[1][2] * B[2][2] + A[1][3] * B[3][2];
+  mat4[1][3] = A[1][0] * B[0][3] + A[1][1] * B[1][3] + A[1][2] * B[2][3] + A[1][3] * B[3][3];
+  
+  mat4[2][0] = A[2][0] * B[0][0] + A[2][1] * B[1][0] + A[2][2] * B[2][0] + A[2][3] * B[3][0];
+  mat4[2][1] = A[2][0] * B[0][1] + A[2][1] * B[1][1] + A[2][2] * B[2][1] + A[2][3] * B[3][1];
+  mat4[2][2] = A[2][0] * B[0][2] + A[2][1] * B[1][2] + A[2][2] * B[2][2] + A[2][3] * B[3][2];
+  mat4[2][3] = A[2][0] * B[0][3] + A[2][1] * B[1][3] + A[2][2] * B[2][3] + A[2][3] * B[3][3];
+
+  mat4[3][0] = A[3][0] * B[0][0] + A[3][1] * B[1][0] + A[3][2] * B[2][0] + A[3][3] * B[3][0];
+  mat4[3][1] = A[3][0] * B[0][1] + A[3][1] * B[1][1] + A[3][2] * B[2][1] + A[3][3] * B[3][1];
+  mat4[3][2] = A[3][0] * B[0][2] + A[3][1] * B[1][2] + A[3][2] * B[2][2] + A[3][3] * B[3][2];
+  mat4[3][3] = A[3][0] * B[0][3] + A[3][1] * B[1][3] + A[3][2] * B[2][3] + A[3][3] * B[3][3];
+
   return mat4;
 }
 
@@ -159,6 +157,13 @@ Matrix4f operator *(const Matrix4f& A, const Matrix4f& B){
 Vector4f operator *(const Matrix4f& M, const Vector4f& v){
   // TODO:
   Vector4f vec;
+  vec[0] = M[0][0] * v[0] + M[0][1] * v[1] + M[0][2] * v[2] + M[0][3] * v[3];
+
+  vec[1] = M[1][0] * v[0] + M[1][1] * v[1] + M[1][2] * v[2] + M[1][3] * v[3];
+
+  vec[2] = M[2][0] * v[0] + M[2][1] * v[1] + M[2][2] * v[2] + M[2][3] * v[3];
+
+  vec[3] = M[3][0] * v[0] + M[3][1] * v[1] + M[3][2] * v[2] + M[3][3] * v[3];
 
   return vec;
 }

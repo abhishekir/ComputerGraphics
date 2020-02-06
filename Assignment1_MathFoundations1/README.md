@@ -7,12 +7,13 @@
 *TODO*: Please edit the following information in your assignment
 
 * Name and partners name (At most 1 partner for this assignment): 
-* How many hours did it take you to complete this assignment? 
+* How many hours did it take you to complete this assignment? 4 hrs
 * Did you collaborate or share ideas with any other students/TAs/Professors? 
+I worked together with my class partner Justin Zhang.
 * Did you use any external resources? 
-  * (tbd if any)
-  * (tbd if any)
-  * (tbd if any)
+  * http://theamazingking.com/ogl-matrix.php
+  * https://glm.g-truc.net/0.9.4/api/a00131.html
+  * https://glm.g-truc.net/0.9.4/api/a00131.html
 * (Optional) What was the most interesting part of the assignment? How would you improve this assignment?
 
 ## Logistics

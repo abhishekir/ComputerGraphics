@@ -13,6 +13,7 @@
 - How many hours did it take you to complete this lab? 2 hrs
 - Did you collaborate with any other students/TAs/Professors? N/A
 - Did you use any external resources? (Cite them below)
+  - https://webglfundamentals.org/webgl/lessons/webgl-3d-perspective.html
   - https://doc.qt.io/qt-5/qopenglbuffer.html#write
   - https://doc.qt.io/qt-5/qopenglshaderprogram.html
 - (Optional) What was your favorite part of the lab?

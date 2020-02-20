@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/Assignment.dir/BasicWidget.cpp.o CMakeFiles/Assignment.dir/Application.cpp.o CMakeFiles/Assignment.dir/main.cpp.o  -o Assignment -lQt5::Widgets -lQt5::Core -lQt5::Gui -lQt5::OpenGL 

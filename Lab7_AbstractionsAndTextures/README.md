@@ -10,9 +10,9 @@
 
 ## Modify this section
 
-- How many hours did it take you to complete this lab?
-- Did you collaborate with any other students/TAs/Professors?
-- Did you use any external resources? (Cite them below)
+- How many hours did it take you to complete this lab? **2 hours**
+- Did you collaborate with any other students/TAs/Professors? **No**
+- Did you use any external resources? (Cite them below) **No**
   - tbd
   - tbd
 - (Optional) What was your favorite part of the lab?
@@ -40,9 +40,9 @@ During your co-ops, internships, and jobs you will often do a code review. Today
 
 Discuss with your partner the following:
 
-1. What are the advantages/disadvantages of the "Renderable" class?: *Add your answer here*
-2. Why do we call Renderable::draw(..) with the matrix info as parameters?: *Add your answer here*
-3. How you can move models in the scene?: *Add your answer here*
+1. What are the advantages/disadvantages of the "Renderable" class?: *An advantage to abstraction with Renderable class is the ability to render mutliple objects without duplicating code. A disadvantage is inflexibility to render different objects with different features.*
+2. Why do we call Renderable::draw(..) with the matrix info as parameters?: *Since the camera could update independently, elapsed time must be centerally tracked in BasicWidget instead of seperately in each Renderable object*
+3. How you can move models in the scene?: *You can move a model by multiply the model_ matrix with a given translation matrix*
 
 ## Part 2 - Textures
 

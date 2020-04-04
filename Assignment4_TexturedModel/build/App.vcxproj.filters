@@ -4,6 +4,12 @@
     <ClCompile Include="C:\Users\Abhishek\Documents\College_Y4_S1\computer_graphics\Abhi_ComputerGraphics\Assignment4_TexturedModel\build\App_autogen\mocs_compilation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Abhishek\Documents\College_Y4_S1\computer_graphics\Abhi_ComputerGraphics\Assignment4_TexturedModel\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Abhishek\Documents\College_Y4_S1\computer_graphics\Abhi_ComputerGraphics\Assignment4_TexturedModel\BasicWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\Abhishek\Documents\College_Y4_S1\computer_graphics\Abhi_ComputerGraphics\Assignment4_TexturedModel\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

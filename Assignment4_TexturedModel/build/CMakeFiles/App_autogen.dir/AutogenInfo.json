@@ -5,7 +5,19 @@
 	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Assignment4_TexturedModel",
 	"CMAKE_EXECUTABLE" : "C:/Program Files/CMake/bin/cmake.exe",
 	"CMAKE_SOURCE_DIR" : "C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Assignment4_TexturedModel",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Assignment4_TexturedModel/Application.h",
+			"Mu",
+			"EWIEGA46WW/moc_Application.cpp"
+		],
+		[
+			"C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Assignment4_TexturedModel/BasicWidget.h",
+			"Mu",
+			"EWIEGA46WW/moc_BasicWidget.cpp"
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Assignment4_TexturedModel/build/App_autogen/include",
 	"INCLUDE_DIR_Debug" : "C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Assignment4_TexturedModel/build/App_autogen/include_Debug",
@@ -73,6 +85,14 @@
 	"SETTINGS_FILE_Release" : "C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Assignment4_TexturedModel/build/CMakeFiles/App_autogen.dir/AutogenUsed_Release.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Assignment4_TexturedModel/Application.cpp",
+			"Mu"
+		],
+		[
+			"C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Assignment4_TexturedModel/BasicWidget.cpp",
+			"Mu"
+		],
 		[
 			"C:/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Assignment4_TexturedModel/main.cpp",
 			"Mu"

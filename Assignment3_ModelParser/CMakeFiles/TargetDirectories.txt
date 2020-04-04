@@ -1,3 +1,0 @@
-/mnt/c/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Assignment3_ModelParser/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Assignment3_ModelParser/CMakeFiles/Assignment.dir
-/mnt/c/Users/Abhishek/Documents/College_Y4_S1/computer_graphics/Abhi_ComputerGraphics/Assignment3_ModelParser/CMakeFiles/edit_cache.dir

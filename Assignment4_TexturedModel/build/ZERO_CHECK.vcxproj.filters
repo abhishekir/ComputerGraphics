@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Abhishek\Documents\College_Y4_S1\computer_graphics\Abhi_ComputerGraphics\Assignment4_TexturedModel\build\CMakeFiles\2b97c65cb0660cc8c8ad969d12a6fef3\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{25DD7E86-D9B4-37EE-BC1E-56E2849BF079}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

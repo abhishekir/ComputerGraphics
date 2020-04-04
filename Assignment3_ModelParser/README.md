@@ -4,7 +4,7 @@
 
 *TODO*: Please edit the following information in your assignment
 
-* Name and partners name(At most 1 partner for this Assignment): Abhishek
+* Name and partners name(At most 1 partner for this Assignment): Justin Zhang
 * How many hours did it take you to complete this Assignment? 10
 * Did you collaborate or share ideas with any other students/TAs/Professors? Asked Gaurav for some help at office hours.
 * Did you use any external resources? 
